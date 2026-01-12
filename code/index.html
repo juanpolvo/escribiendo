@@ -1,19 +1,17 @@
 ---
 layout: layout-base.njk
-title: Juan PM - Copywriting emocional.
-description: No para gustar
+title: Juan Polvo - Escribiendo.
+description: Escribo para vender
 tags: ["pages"]
 date: "2025-01-06"
 ---
 
-  <!--==================== ORDER ====================-->
-  <section class="order section">
+  <!--==================== HOME ====================-->
+  <section class="home section">
     {% set posts = collections.posts %}
     {% if posts.length %}
-    <div class="order__container container grid">
-      <article class="order__card">
+    <div class="home__container container grid">
         {{ posts[0].templateContent | safe }}
-      </article>
     </div>
     {% endif %}
   </section>
