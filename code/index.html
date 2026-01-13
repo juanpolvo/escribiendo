@@ -6,15 +6,36 @@ tags: ["pages"]
 date: "2025-01-06"
 ---
 
-  <!--==================== HOME ====================-->
-  <section class="home section">
-    {% set posts = collections.posts %}
-    {% if posts.length %}
+<!--==================== HOME ====================-->
+<section class="home" id="home">
     <div class="home__container container grid">
-        {{ posts[0].templateContent | safe }}
+
+        <div class="home__social">
+            <a href="https://www.facebook.com/juanpolvoescribiendo" target="_blank" class="home__social-link">
+                Facebook
+            </a>
+            <a href="https://x.com/" target="_blank" class="home__social-link">
+                X
+            </a>
+            <a href="https://www.instagram.com/juanpolvoescribiendo/" target="_blank" class="home__social-link">
+                Instagram
+            </a>
+        </div>
+
+        <div class="home__data">
+            
+            {% set posts = collections.posts %}
+              {% if posts.length %}
+
+              {{ posts[0].templateContent | safe }}
+
+              {% endif %}
+            
+        </div>
     </div>
-    {% endif %}
-  </section>
+</section>
+
+  
 
 
 
