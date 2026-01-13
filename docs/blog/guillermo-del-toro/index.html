@@ -5,8 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GUILLERMO DEL Toro</title>
   <meta name="description" content="No para gustar">
+  <!--=============== FAVICON ===============-->
   <link rel="icon" href="/escribiendo/img/logo.svg">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-okaidia.min.css">
+
+  <!--=============== REMIXICONS ===============-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+   <!--=============== CSS ===============-->
   <link rel="stylesheet" href="/escribiendo/css/styles.css">
 </head>
 <body>
@@ -54,11 +59,24 @@
         </header>
 
   <main class="main">
-    
     <!--==================== HOME ====================-->
-    <section class="home section">
-      <div class="home__container container grid">
-          <p style="text-align: right;">&ldquo;Vi una demostraci&oacute;n de IA y pens&eacute;:</p>
+    <section class="home" id="home">
+        <div class="home__container container grid">
+
+            <div class="home__social">
+                <a href="https://www.facebook.com/juanpolvoescribiendo" target="_blank" class="home__social-link">
+                    Facebook
+                </a>
+                <a href="https://x.com/" target="_blank" class="home__social-link">
+                    X
+                </a>
+                <a href="https://www.instagram.com/juanpolvoescribiendo/" target="_blank" class="home__social-link">
+                    Instagram
+                </a>
+            </div>
+
+            <div class="home__data">
+              <p style="text-align: right;">&ldquo;Vi una demostraci&oacute;n de IA y pens&eacute;:</p>
 <p style="text-align: right;">Oh, eso es lo que la gente cree que es hacer animaciones. Dar indicaciones y la computadora lo hace.</p>
 <p style="text-align: right;">La IA ha demostrado que puede hacer salvapantallas semiatractivos.</p>
 <p style="text-align: right;">Eso es esencialmente todo. Y creo que el valor del arte no es cu&aacute;nto cuesta y el poco esfuerzo que requiere. Es cu&aacute;nto te arriesgar&iacute;as a estar en su presencia.</p>
@@ -71,8 +89,9 @@
 <p>Es m&aacute;s, es inevitable.</p>
 <p>Ahora, si andas preocupado por la llegada de la IA y lo que pasar&aacute; en tu negocio, lo tienes facil&iacute;simo...</p>
 <p>Vuelve a leer lo que dice el se&ntilde;or Del Toro.</p>
-      </div>
-      </section>
+          </div>
+        </div>
+    </section>
   </main>
   <!--==================== FOOTER ====================-->
         <footer class="footer section">
@@ -115,6 +134,10 @@
             <span class="footer__copy">&#169; juanpolvoescribiendo. All rigths reserved</span>
         </footer>
 
+  <!--=============== SCROLL UP ===============-->
+  <a href="#" class="scrollup" id="scroll-up"> 
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+  </a>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
   <script src="/escribiendo/js/main.js" type="module"></script>
 </body>
